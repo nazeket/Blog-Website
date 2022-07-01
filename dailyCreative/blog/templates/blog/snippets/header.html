@@ -1,0 +1,116 @@
+{% load static %}
+<!--*Header*-->
+    <header id="inner-navigation">
+
+        <!-- navbar start -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function navbar-arrow">
+
+            <div class="container">
+
+                <div class="logo pull-left">
+                    <h1><a href="{% url 'index' %}"><img src="{% static 'blog/images/logo.png' %}"></a></h1>
+                </div>
+
+                <div id="navbar" class="navbar-nav-wrapper text-center">
+                    <ul class="nav navbar-nav navbar-right" id="responsive-menu">
+                        <li class="active"><a href="#">Home <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Home Default</a></li>
+                                <li><a href="#">Home List View</a>
+                                    <ul>
+                                        <li><a href="{% url 'index_1' %}">Home RightSidebar</a></li>
+                                        <li><a href="{% url 'index_2' %}">Home Fullwidth</a></li>
+                                        <li><a href="{% url 'index_3' %}">Home LeftSidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Home Grid View</a>
+                                    <ul>
+                                        <li><a href="{% url 'index_4' %}">Home RightSidebar</a></li>
+                                        <li><a href="{% url 'index' %}">Home Fullwidth</a></li>
+                                        <li><a href="{% url 'index_5' %}">Home LeftSidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'mag' %}">Magazine</a>
+                                    <ul>
+                                        <li><a href="{% url 'mag' %}">Default Magazine</a></li>
+                                        <li><a href="{% url 'mag_food' %}">Food Magazine</a></li>
+                                        <li><a href="{% url 'mag_fashion' %}">Fashion Magazine</a></li>
+                                        <li><a href="{% url 'mag_travel' %}">Travel Magazine</a></li>
+                                        <li><a href="{% url 'mag_tech' %}">Tech Magazine</a></li>
+                                        <li><a href="{% url 'mag_photo' %}">Photography Magazine</a></li>
+                                        <li><a href="{% url 'mag_fitness' %}">Fitness Magazine</a></li>
+                                        <li><a href="{% url 'mag_sports' %}">Sports Magazine</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="{% url 'about_us' %}">About Us</a></li>
+                                <li><a href="{% url 'error' %}">Error Page</a></li>
+                                <li><a href="#">Detail Page</a>
+                                    <ul>
+                                        <li><a href="{% url 'blog_details' %}">Detail 1</a></li>
+                                        <li><a href="{% url 'blog_details_1' %}">Detail 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="author.html">Author Page</a></li>
+                                <li><a href="#">Category</a>
+                                    <ul>
+                                        <li><a href="{% url 'category' %}">Category Lists</a></li>
+                                        <li><a href="{% url 'category_detail' %}">Category Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Tags</a>
+                                    <ul>
+                                        <li><a href="{% url 'tag' %}">Tag Lists</a></li>
+                                        <li><a href="{% url 'tag_detail' %}">Tag Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'faq' %}">Faq</a></li>
+                                <li><a href="{% url 'coming_soon' %}">Coming Soon</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Dashboard  <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                                <li><a href="{% url 'dashboard_my_profile' %}">Dashboard Profile</a></li>
+                                <li><a href="{% url 'dashboard_booking' %}">Dashboard Bookings</a></li>
+                                <li><a href="{% url 'dashboard_history' %}">Dashboard History</a></li>
+                                <li><a href="{% url 'dashboard_list' %}">Dashboard Listing</a></li>
+                                <li><a href="{% url 'dashboard_addtour' %}">Dashboard Add Tour</a></li>
+                                <li><a href="{% url 'dashboard_reviews' %}">Dashboard Reviews</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="{% url 'shop' %}">Shop <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="{% url 'shop' %}">Shop List</a></li>
+                                <li><a href="{% url 'shop_detail' %}">Shop Detail</a></li>
+                                <li><a href="{% url 'cart' %}">Cart</a></li>
+                                <li><a href="{% url 'checkout' %}">Checkout</a></li>
+                                <li><a href="{% url 'login' %}">Login Page</a></li>
+                                <li><a href="{% url 'forgot_password' %}">Forgot Password</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                        <li><a href="#search" class="mt_search"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+
+            <div id="slicknav-mobile"></div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+    <!--* End Header*-->
+
+
+ <!--*Scripts*-->
+    <!-- Latest jquery --><script src="{% static 'blog/js/jquery-3.2.1.min.js' %}"></script>
+    <!-- Plugin Jquery --><script src="{% static 'blog/js/plugin.js' %}"></script>
+    <!-- custom nav jquery --><script src="{% static 'blog/js/custom-nav.js' %}"></script>
+    <!-- main default Jquery --><script src="{% static 'blog/js/main.js' %}"></script>
